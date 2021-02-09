@@ -1,8 +1,6 @@
 Hallo IMP 10 Cracks !
 
 Hallo, bitte alle melden...
-<<<<<<< HEAD
+
 Ja servus: Felix Witschi
-=======
-Ja, ich melde mich: Uli Gö, Quirin 
->>>>>>> cd16691be52ef7dfad39241c4d046471ca7eb775
+

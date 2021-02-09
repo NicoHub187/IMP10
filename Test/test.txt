@@ -1,8 +1,4 @@
 Hallo IMP 10 Cracks !
 
 Hallo, bitte alle melden...
-<<<<<<< Updated upstream
-Ja, ich melde mich: Uli Gö
-=======
-Ja, ich melde mich : Timon Röck
->>>>>>> Stashed changes
+Ja, ich melde mich: Uli Gö, Quirin 

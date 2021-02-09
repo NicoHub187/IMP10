@@ -1,7 +1,18 @@
 Hallo IMP 10 Cracks !
 
+<<<<<<< HEAD
+Hallo, bitte alle melden... 
+Hallo bin Frederik
+
+=======
 Hallo, bitte alle melden...
 <<<<<<< HEAD
+<<<<<<< HEAD
+gemeldet Fabiana
+=======
+Ja, ich melde mich: Uli Gö, Quirin 
+>>>>>>> cd16691be52ef7dfad39241c4d046471ca7eb775
+=======
 <<<<<<< HEAD
 Moin bin Paul
 =======
@@ -12,3 +23,5 @@ Ja, ich melde mich: Uli Gö, Quirin
 >>>>>>> cd16691be52ef7dfad39241c4d046471ca7eb775
 
 paul hallo
+>>>>>>> d749ef639cab750344a8eda00e0d56e5c8648ba9
+>>>>>>> 6d61bffcf9a5aff47fab400cb8b9042192794550

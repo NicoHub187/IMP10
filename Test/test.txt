@@ -1,8 +1,5 @@
 Hallo IMP 10 Cracks !
 
 Hallo, bitte alle melden...
-<<<<<<< HEAD
 
-=======
-Ja, ich melde mich: Uli Gö,clemens
->>>>>>> e1b07765a7dcb1bcd7aef4d276e5432d3ccd5746
+moin bin Clemens

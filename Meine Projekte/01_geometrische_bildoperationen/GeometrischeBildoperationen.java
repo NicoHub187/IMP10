@@ -22,7 +22,7 @@ public class GeometrischeBildoperationen
 
         for(int x=0; x < breite; x++) {
             for(int y=0;y < hoehe; y++) {
-                pixelNeu[x][y] = pixel[x][(hoehe-1)-y];
+                pixelNeu[x][y] = pixel[(breite-1)-x][(hoehe-1)-y];
             }
         }
 

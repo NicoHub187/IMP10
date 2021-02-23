@@ -22,11 +22,11 @@ public class GeometrischeBildoperationen
         int hoehe  = originalbild.getHeight();
 
         Color[][] pixel = originalbild.getPixelArray();
-        Color[][] pixelNeu = new Color[breite][hoehe];
+        Color[][] pixelNeu = new Color[hoehe][breite];
 
-        for(int x=0; x < breite; x++) {
-            for(int y=0;y < hoehe; y++) {
-                pixelNeu[x][y] = pixel[(breite-1)-x][y];
+        for(int x=0; x < hoehe; x++) {
+            for(int y=0;y < breite; y++) {
+                pixelNeu[x][y] = pixel[(breite-1)-y][(hoehe-1)-x];
             }
         }
 

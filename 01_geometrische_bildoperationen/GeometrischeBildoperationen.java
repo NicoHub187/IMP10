@@ -7,7 +7,7 @@ import java.util.Random;
  * z.B. drehen, spiegeln usw.
  *
  * @author Clemens Schulmeister
- * @version 1.1
+ * @version 1.1**/
 public class GeometrischeBildoperationen 
 {
     /** spiegeleHorizontal spiegelt das Bild, so dass rechts und links getauscht werden
@@ -16,7 +16,7 @@ public class GeometrischeBildoperationen
      */
 
 //die anderen Methoden nicht löschen, brauchen wir alle später noch!
-
+//ich habe die Methoden nur umbenannt, jetzt aber die erste nochmal erstellt 
     public  Picture dreheRechts(Picture originalbild) {
         int breite = originalbild.getWidth();
         int hoehe  = originalbild.getHeight();
@@ -34,7 +34,7 @@ public class GeometrischeBildoperationen
         neuesBild.setPixelArray(pixelNeu); 
         return neuesBild;
     }
-    public  Picture dreheLinks(Picture originalbild) {
+public  Picture dreheLinks(Picture originalbild) {
         int breite = originalbild.getWidth();
         int hoehe  = originalbild.getHeight();
 
@@ -51,7 +51,23 @@ public class GeometrischeBildoperationen
         neuesBild.setPixelArray(pixelNeu); 
         return neuesBild;
     }
-    
+public  Picture spiegeleHorizontal(Picture originalbild) {
+        int breite = originalbild.getWidth();
+        int hoehe  = originalbild.getHeight();
+
+        Color[][] pixel = originalbild.getPixelArray();
+        Color[][] pixelNeu = new Color[breite][hoehe];
+
+        for(int x=0; x < breite; x++) {
+            for(int y=0;y < hoehe; y++) {
+                pixelNeu[x][y] = pixel[(breite-1)-x][y];
+            }
+        }
+
+        Picture neuesBild = new Picture();
+        neuesBild.setPixelArray(pixelNeu); 
+        return neuesBild;
+    }
 
 
 }

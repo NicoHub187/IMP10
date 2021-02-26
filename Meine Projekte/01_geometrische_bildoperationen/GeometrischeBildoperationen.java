@@ -40,10 +40,8 @@ public class GeometrischeBildoperationen
 
         for(int x=0; x < breite; x++) {
             for(int y=0;y < hoehe; y++) {
-                //pixelNeu[y][x] = pixel[x][(hoehe-1)-y];
                 pixelNeu[y][x] = pixel[x][(hoehe-1)-y];
-                // das ist falsch, weil du
-                //zusätzlich nochmal von oben nach unten spiegelst.
+                
             }
         }
 

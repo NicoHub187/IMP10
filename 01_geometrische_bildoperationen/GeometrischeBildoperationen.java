@@ -6,9 +6,8 @@ import java.util.Random;
  * Algorithmen zur Änderung der Pixelpositionen eines Pictures
  * z.B. drehen, spiegeln usw.
  *
- * @author Thomas Schaller
- * @author Uli Göppert
- * @version 1.1 (28.11.2019)
+ * @author Felix Witschi
+ * @version
  */
 public class GeometrischeBildoperationen 
 {
@@ -22,11 +21,13 @@ public class GeometrischeBildoperationen
         int hoehe  = originalbild.getHeight();
 
         Color[][] pixel = originalbild.getPixelArray();
-        Color[][] pixelNeu = new Color[hoehe][breite];
+        Color[][] pixelNeu = new Color[hoehe][breite]; //nur beim Drehen um 90 Grad nötig
 
         for(int x=0; x < hoehe; x++) {
             for(int y=0;y < breite; y++) {
-                pixelNeu[x][y] = pixel[(breite-1)-y][(hoehe-1)-x];
+                pixelNeu[x][y] = pixel[(breite-1)-y][(hoehe-1)-x]; // das ist so nicht richtig, 
+                //kannst du es verbessesrn? Oder wolltest du um 90 nach rechts? Ist dann aber
+                //auch noch nicht richtig...
             }
         }
 

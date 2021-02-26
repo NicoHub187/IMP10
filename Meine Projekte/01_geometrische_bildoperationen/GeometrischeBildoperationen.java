@@ -40,7 +40,9 @@ public class GeometrischeBildoperationen
 
         for(int x=0; x < breite; x++) {
             for(int y=0;y < hoehe; y++) {
-                pixelNeu[y][x] = pixel[(breite-1)-x][(hoehe-1)-y]; // das ist falsch, weil du
+                //pixelNeu[y][x] = pixel[x][(hoehe-1)-y];
+                pixelNeu[y][x] = pixel[x][(hoehe-1)-y];
+                // das ist falsch, weil du
                 //zusätzlich nochmal von oben nach unten spiegelst.
             }
         }
@@ -58,9 +60,7 @@ public class GeometrischeBildoperationen
 
         for(int x=0; x < breite; x++) {
             for(int y=0;y < hoehe; y++) {
-                pixelNeu[y][x] = pixel[x][(hoehe-1)-y]; //falsch, denn du drehst rechts
-                //Tausch von x und y bewirkt drehung nach rechts und umdrehen des Bildes von
-                //vorne nach hinten, dann noch die Spiegelung bezüglich der alten Höhe...
+                pixelNeu[y][x] = pixel[x][y]; 
             }
         }
 

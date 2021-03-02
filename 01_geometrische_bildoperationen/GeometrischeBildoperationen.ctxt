@@ -4,4 +4,6 @@ comment0.text=\r\n\ Algorithmen\ zur\ \u00C4nderung\ der\ Pixelpositionen\ eines
 comment1.params=originalbild
 comment1.target=imp.Picture\ drehlinks(imp.Picture)
 comment1.text=\ spiegeleHorizontal\ spiegelt\ das\ Bild,\ so\ dass\ rechts\ und\ links\ getauscht\ werden\r\n\ @param\ originalbild\ Ein\ Bild\ (Picture),\ das\ gespiegelt\ werden\ soll\r\n\ @return\ Eine\ gespiegelte\ Kopie\ des\ Bildes\r\n
-numComments=2
+comment2.params=originalbild
+comment2.target=imp.Picture\ drehekomplett(imp.Picture)
+numComments=3

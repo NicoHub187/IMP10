@@ -6,4 +6,6 @@ comment1.target=imp.Picture\ spiegelHorizontal(imp.Picture)
 comment1.text=\ spiegeleHorizontal\ spiegelt\ das\ Bild,\ so\ dass\ rechts\ und\ links\ getauscht\ werden\r\n\ @param\ originalbild\ Ein\ Bild\ (Picture),\ das\ gespiegelt\ werden\ soll\r\n\ @return\ Eine\ gespiegelte\ Kopie\ des\ Bildes\r\n
 comment2.params=originalbild
 comment2.target=imp.Picture\ drehelinks(imp.Picture)
-numComments=3
+comment3.params=originalbild
+comment3.target=imp.Picture\ drehe180Grad(imp.Picture)
+numComments=4

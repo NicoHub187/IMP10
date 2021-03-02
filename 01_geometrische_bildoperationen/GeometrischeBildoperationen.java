@@ -36,22 +36,22 @@ public class GeometrischeBildoperationen
     }
 
     public Picture dreheUm90Grad(Picture originalbild){
-        int breite = originalbild.getWidth();
-        int hoehe  = originalbild.getHeight();
+        int breite = originalbild.getHeight(); // auch hier musst du umstellen
+        int hoehe  = originalbild.getWidth();
         
         Color[][] pixel = originalbild.getPixelArray();
         Color[][] pixelNeu = new Color[breite][hoehe];
         
-        Color[][] bildNeu = new Color[breite][hoehe];
+        //Color[][] bildNeu = new Color[breite][hoehe];
         
         for(int x=0; x < breite; x++) {
             for(int y=0;y < hoehe; y++) {
-                bildNeu[x][y] = originalbild[(breite-1)-y][x];
+                pixelNeu[x][y] = pixel[(hoehe-1)-y][x]; // hier ist der Fehler
             }
         }
         
         Picture neuesBild = new Picture();
-        neuesBild.setPixelArray(pixelNeu);
+        neuesBild.setPixelArray(pixelNeu); // du hast ja pixelNeu benutzt um dein neues Bild zu erzeugen
         return neuesBild;
     }    
 

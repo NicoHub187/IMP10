@@ -8,4 +8,6 @@ comment2.params=originalbild
 comment2.target=imp.Picture\ drehelinks(imp.Picture)
 comment3.params=originalbild
 comment3.target=imp.Picture\ drehe180Grad(imp.Picture)
-numComments=4
+comment4.params=originalbild
+comment4.target=imp.Picture\ dreherechts(imp.Picture)
+numComments=5

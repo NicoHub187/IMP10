@@ -17,6 +17,7 @@ public class GeometrischeBildoperationen
 
 //die anderen Methoden nicht löschen, brauchen wir alle später noch!
 //ich habe die Methoden nur umbenannt, jetzt aber die erste nochmal erstellt 
+// okay !
     public  Picture dreheRechts(Picture originalbild) {
         int breite = originalbild.getWidth();
         int hoehe  = originalbild.getHeight();
@@ -28,6 +29,7 @@ public class GeometrischeBildoperationen
             for(int y=0;y < breite; y++) {
                 pixelNeu[x][y] = pixel[y][(hoehe-1)-x];// noch nicht ganz richtig, da du einmal zuviel von oben nach unten spiegelst.
                                                           //müsste jetzt richtig sein
+														  // ja, hast du auch getestet, oder?
             }
         }
 
@@ -46,6 +48,7 @@ public  Picture dreheLinks(Picture originalbild) {
             for(int y=0;y < breite; y++) {
                 pixelNeu[x][y] = pixel[(breite-1)-y][x];//auch nicht richtig, kannst du das Ergebnis nicht prüfen?
                                                         //habe ich auch korrigiert
+														// ja !
             }
         }
 
@@ -79,7 +82,7 @@ public  Picture drehe180(Picture originalbild) {
 
          for(int x=0; x < breite; x++) {
             for(int y=0;y < hoehe; y++) {
-                pixelNeu[x][y] = pixel[(breite-1)-x][(hoehe-1)-y];
+                pixelNeu[x][y] = pixel[(breite-1)-x][(hoehe-1)-y]; // perfekt !!!
             }
         }
 

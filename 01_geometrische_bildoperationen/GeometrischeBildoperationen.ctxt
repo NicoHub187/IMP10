@@ -8,4 +8,6 @@ comment2.params=originalbild
 comment2.target=imp.Picture\ dreheLinks(imp.Picture)
 comment3.params=originalbild
 comment3.target=imp.Picture\ spiegeleHorizontal(imp.Picture)
-numComments=4
+comment4.params=originalbild
+comment4.target=imp.Picture\ drehe180(imp.Picture)
+numComments=5

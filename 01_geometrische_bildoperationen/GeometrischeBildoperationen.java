@@ -24,9 +24,9 @@ public class GeometrischeBildoperationen
         Color[][] pixel = originalbild.getPixelArray();
         Color[][] pixelNeu = new Color[hoehe][breite];
 
-        for(int x=0; x < hoehe; x++) {
+         for(int x=0; x < hoehe; x++) {
             for(int y=0;y < breite; y++) {
-                pixelNeu[x][y] = pixel[(breite-1)-y][(hoehe-1)-x];// noch nicht ganz richtig, da du einmal zuviel von oben nach unten spiegelst.
+                pixelNeu[x][y] = pixel[y][(hoehe-1)-x];// noch nicht ganz richtig, da du einmal zuviel von oben nach unten spiegelst.
             }
         }
 
@@ -41,9 +41,9 @@ public  Picture dreheLinks(Picture originalbild) {
         Color[][] pixel = originalbild.getPixelArray();
         Color[][] pixelNeu = new Color[hoehe][breite];
 
-        for(int x=0; x < hoehe; x++) {
+         for(int x=0; x < hoehe; x++) {
             for(int y=0;y < breite; y++) {
-                pixelNeu[x][y] = pixel[y][x];//auch nicht richtig, kannst du das Ergebnis nicht prüfen?
+                pixelNeu[x][y] = pixel[(breite-1)-y][x];//auch nicht richtig, kannst du das Ergebnis nicht prüfen?
             }
         }
 
@@ -68,6 +68,22 @@ public  Picture spiegeleHorizontal(Picture originalbild) {
         neuesBild.setPixelArray(pixelNeu); 
         return neuesBild;
     }
+public  Picture drehe180(Picture originalbild) {
+        int breite = originalbild.getWidth();
+        int hoehe  = originalbild.getHeight();
 
+        Color[][] pixel = originalbild.getPixelArray();
+        Color[][] pixelNeu = new Color[breite][hoehe];
+
+         for(int x=0; x < breite; x++) {
+            for(int y=0;y < hoehe; y++) {
+                pixelNeu[x][y] = pixel[(breite-1)-x][(hoehe-1)-y];
+            }
+        }
+
+        Picture neuesBild = new Picture();
+        neuesBild.setPixelArray(pixelNeu); 
+        return neuesBild;
+    }
 
 }

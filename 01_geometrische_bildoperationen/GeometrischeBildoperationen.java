@@ -35,7 +35,25 @@ public class GeometrischeBildoperationen
         return neuesBild;
     }
 
-    
+    public Picture dreheUm90Grad(Picture originalbild){
+        int breite = originalbild.getWidth();
+        int hoehe  = originalbild.getHeight();
+        
+        Color[][] pixel = originalbild.getPixelArray();
+        Color[][] pixelNeu = new Color[breite][hoehe];
+        
+        Color[][] bildNeu = new Color[breite][hoehe];
+        
+        for(int x=0; x < breite; x++) {
+            for(int y=0;y < hoehe; y++) {
+                bildNeu[x][y] = originalbild[(breite-1)-y][x];
+            }
+        }
+        
+        Picture neuesBild = new Picture();
+        neuesBild.setPixelArray(pixelNeu);
+        return neuesBild;
+    }    
 
 
 }

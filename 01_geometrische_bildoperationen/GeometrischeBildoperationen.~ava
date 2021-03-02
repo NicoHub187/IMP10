@@ -25,7 +25,7 @@ public class GeometrischeBildoperationen
 
         for(int x=0; x < breite; x++) {
             for(int y=0;y < hoehe; y++) {
-                pixelNeu[x][y] = pixel[(hoehe-1)-y][x];  // perfekt!
+                pixelNeu[x][y] = pixel[(hoehe-1)-y][x]; 
             }
         }
 
@@ -42,7 +42,7 @@ public class GeometrischeBildoperationen
 
         for(int x=0; x < breite; x++) {
             for(int y=0;y < hoehe; y++) {
-                pixelNeu[x][y] = pixel[y][(breite-1)-x];  // super     
+                pixelNeu[x][y] = pixel[y][(breite-1)-x]; 
             }
         }
 
@@ -61,7 +61,7 @@ public class GeometrischeBildoperationen
 
         for(int x=0; x < breite; x++) {
             for(int y=0;y < hoehe; y++) {
-                pixelNeu[x][y] = pixel[(breite-1)-x][(hoehe-1)-y];   // gut !!
+                pixelNeu[x][y] = pixel[(breite-1)-x][(hoehe-1)-y];
             }
         }
         

@@ -8,7 +8,7 @@ import java.util.Random;
  *
  * @author Thomas Schaller
  * @author Timon Röck
- * @version 1.1 (23.2.2021)
+ * @version 1.1 (2.3.2021)
  */
 public class GeometrischeBildoperationen 
 {

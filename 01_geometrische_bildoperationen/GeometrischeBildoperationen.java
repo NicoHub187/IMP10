@@ -16,18 +16,16 @@ public class GeometrischeBildoperationen
      * @return Eine gespiegelte Kopie des Bildes
      */
 
-    public  Picture spiegelHorizontal(Picture originalbild) {
-        int breite = originalbild.getWidth();
-        int hoehe  = originalbild.getHeight();
+    public  Picture drehlinks(Picture originalbild) {
+        int hoehe = originalbild.getWidth();
+        int breite  = originalbild.getHeight();
 
         Color[][] pixel = originalbild.getPixelArray();
-        Color[][] pixelNeu = new Color[hoehe][breite]; //nur beim Drehen um 90 Grad nötig
+        Color[][] pixelNeu = new Color[breite][hoehe]; //nur beim Drehen um 90 Grad nötig
 
-        for(int x=0; x < hoehe; x++) {
-            for(int y=0;y < breite; y++) {
-                pixelNeu[x][y] = pixel[(breite-1)-y][(hoehe-1)-x]; // das ist so nicht richtig, 
-                //kannst du es verbessesrn? Oder wolltest du um 90 nach rechts? Ist dann aber
-                //auch noch nicht richtig...
+        for(int x=0; x < breite; x++) {
+            for(int y=0;y < hoehe; y++) {
+                pixelNeu[x][y] = pixel[(hoehe-1)-y][x]; 
             }
         }
 

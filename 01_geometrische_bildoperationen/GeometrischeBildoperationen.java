@@ -7,8 +7,8 @@ import java.util.Random;
  * z.B. drehen, spiegeln usw.
  *
  * @author Thomas Schaller
- * @author Uli Göppert
- * @version 1.1 (28.11.2019)
+ * @author Sara Wulhorst
+ * @version 1.1 (23.02.2021)
  */
 public class GeometrischeBildoperationen 
 {
@@ -34,8 +34,44 @@ public class GeometrischeBildoperationen
         neuesBild.setPixelArray(pixelNeu); 
         return neuesBild;
     }
+    public Picture dreheUm90GradLinks(Picture originalbild) {
+        int breite = originalbild.getHeight();
+        int hoehe = originalbild.getWidth();
+        
+        Color[][] pixel = originalbild.getPixelArray();
+        Color[][] pixelNeu = new Color[breite][hoehe];
+        
+        for(int x=0; x < breite; x++) {
+            for(int y=0; y < hoehe; y++) {
+                pixelNeu[x][y] = pixel[(hoehe-1)-y][x];
+            }
+        }
+    
+        Picture neuesBild = new Picture();
+        neuesBild.setPixelArray(pixelNeu);
+        return neuesBild;
+    }
+    public Picture dreheUm90GradRechts(Picture originalbild){
+        int breite = originalbild.getHeight();
+        int hoehe = originalbild.getWidth();
+        
+        Color[][] pixel = originalbild.getPixelArray();
+        Color[][] pixelNeu = new Color[breite][hoehe];
+        
+        for(int x=0; x < breite; x++) {
+            for(int y=0; y < hoehe; y++) {
+                pixelNeu[x][y] = pixel[y][(hoehe-1)-x];
+            }
+        }
+        
+        Picture neuesBild = new Picture();
+        neuesBild.setPixelArray(pixelNeu);
+        return neuesBild;
+    }
+    }
+        
 
     
 
 
-}
+

@@ -33,6 +33,23 @@ public class GeometrischeBildoperationen
         neuesBild.setPixelArray(pixelNeu); 
         return neuesBild;
     }
+    public  Picture drehrechts(Picture originalbild) {
+        int hoehe = originalbild.getWidth();
+        int breite  = originalbild.getHeight();
+
+        Color[][] pixel = originalbild.getPixelArray();
+        Color[][] pixelNeu = new Color[breite][hoehe]; //nur beim Drehen um 90 Grad nötig
+
+        for(int x=0; x < breite; x++) {
+            for(int y=0;y < hoehe; y++) {
+                pixelNeu[x][y] = pixel[y][(breite-1)-x]; 
+            }
+        }
+
+        Picture neuesBild = new Picture();
+        neuesBild.setPixelArray(pixelNeu); 
+        return neuesBild;
+    }
 
     public  Picture drehekomplett(Picture originalbild) {
         int breite = originalbild.getWidth();

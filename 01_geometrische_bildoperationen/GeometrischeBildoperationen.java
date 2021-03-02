@@ -27,6 +27,7 @@ public class GeometrischeBildoperationen
          for(int x=0; x < hoehe; x++) {
             for(int y=0;y < breite; y++) {
                 pixelNeu[x][y] = pixel[y][(hoehe-1)-x];// noch nicht ganz richtig, da du einmal zuviel von oben nach unten spiegelst.
+                                                          //müsste jetzt richtig sein
             }
         }
 
@@ -44,6 +45,7 @@ public  Picture dreheLinks(Picture originalbild) {
          for(int x=0; x < hoehe; x++) {
             for(int y=0;y < breite; y++) {
                 pixelNeu[x][y] = pixel[(breite-1)-y][x];//auch nicht richtig, kannst du das Ergebnis nicht prüfen?
+                                                        //habe ich auch korrigiert
             }
         }
 

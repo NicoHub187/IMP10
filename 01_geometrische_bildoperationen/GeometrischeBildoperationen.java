@@ -34,7 +34,24 @@ public class GeometrischeBildoperationen
         neuesBild.setPixelArray(pixelNeu); 
         return neuesBild;
     }
+    
+    public  Picture drehelinks(Picture originalbild) {
+        int breite = originalbild.getHeight();
+        int hoehe  = originalbild.getWidth();
 
+        Color[][] pixel = originalbild.getPixelArray();
+        Color[][] pixelNeu = new Color[breite][hoehe];
+
+        for(int x=0; x < breite; x++) {
+            for(int y=0;y < hoehe; y++) {
+                pixelNeu[x][y] = pixel[(hoehe-1)-y][x];
+            }
+        }
+
+        Picture neuesBild = new Picture();
+        neuesBild.setPixelArray(pixelNeu); 
+        return neuesBild;
+    }
     
 
 

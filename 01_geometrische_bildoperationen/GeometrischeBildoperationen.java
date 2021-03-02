@@ -7,8 +7,8 @@ import java.util.Random;
  * z.B. drehen, spiegeln usw.
  *
  * @author Thomas Schaller
- * @author Uli Göppert
- * @version 1.1 (28.11.2019)
+ * @author Quirin
+ * @version 1.1
  */
 public class GeometrischeBildoperationen 
 {
@@ -36,7 +36,7 @@ public class GeometrischeBildoperationen
     }
     
     public  Picture drehelinks(Picture originalbild) {
-        int breite = originalbild.getHeight();
+        int breite = originalbild.getHeight(); //gut
         int hoehe  = originalbild.getWidth();
 
         Color[][] pixel = originalbild.getPixelArray();
@@ -44,7 +44,7 @@ public class GeometrischeBildoperationen
 
         for(int x=0; x < breite; x++) {
             for(int y=0;y < hoehe; y++) {
-                pixelNeu[x][y] = pixel[(hoehe-1)-y][x];
+                pixelNeu[x][y] = pixel[(hoehe-1)-y][x]; //ja, wie besprochen
             }
         }
 
@@ -61,7 +61,7 @@ public class GeometrischeBildoperationen
 
         for(int x=0; x < breite; x++) {
             for(int y=0;y < hoehe; y++) {
-                pixelNeu[x][y] = pixel[(breite-1)-x][(hoehe-1)-y];
+                pixelNeu[x][y] = pixel[(breite-1)-x][(hoehe-1)-y]; //klappt auch
             }
         }
 
@@ -70,7 +70,7 @@ public class GeometrischeBildoperationen
         return neuesBild;
     }
      public  Picture dreherechts(Picture originalbild) {
-        int breite = originalbild.getHeight();
+        int breite = originalbild.getHeight(); //ja
         int hoehe  = originalbild.getWidth();
 
         Color[][] pixel = originalbild.getPixelArray();
@@ -78,7 +78,7 @@ public class GeometrischeBildoperationen
 
         for(int x=0; x < breite; x++) {
             for(int y=0;y < hoehe; y++) {
-                pixelNeu[x][y] = pixel[(x)][(hoehe-1)-x];
+                pixelNeu[x][y] = pixel[(x)][(hoehe-1)-x]; // das ist noch nicht fertig, gell?
             }
         }
 

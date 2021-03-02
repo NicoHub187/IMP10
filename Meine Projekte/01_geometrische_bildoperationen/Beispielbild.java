@@ -14,8 +14,9 @@ public class Beispielbild extends Picture
      */
     public Beispielbild()
     {
-        super("iris.jpg");
+        super("omnom.jpg");
     }
+    
 
     public void load(String dateiname) {
         super.load("images/"+dateiname);

@@ -43,7 +43,7 @@ public class GeometrischeBildoperationen
         
         for(int x=0; x < breite; x++) {
             for(int y=0; y < hoehe; y++) {
-                pixelNeu[x][y] = pixel[(hoehe-1)-y][x];
+                pixelNeu[x][y] = pixel[(hoehe-1)-y][x]; // wie besprochen
             }
         }
     
@@ -60,7 +60,7 @@ public class GeometrischeBildoperationen
         
         for(int x=0; x < breite; x++) {
             for(int y=0; y < hoehe; y++) {
-                pixelNeu[x][y] = pixel[y][(breite-1)-x];
+                pixelNeu[x][y] = pixel[y][(breite-1)-x]; // ja, klappt auch, super!!!
             }
         }
         

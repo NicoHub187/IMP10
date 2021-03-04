@@ -7,8 +7,8 @@ import java.util.Random;
  * z.B. drehen, spiegeln usw.
  *
  * @author Thomas Schaller
- * @author Uli Göppert
- * @version 1.1 (28.11.2019)
+ * @author Nico Bürgin
+ * @version 1.1
  */
 public class GeometrischeBildoperationen 
 {

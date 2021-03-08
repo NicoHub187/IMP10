@@ -1,7 +1,19 @@
 #BlueJ class context
 comment0.target=GeometrischeBildoperationen
-comment0.text=\r\n\ Algorithmen\ zur\ \u00C4nderung\ der\ Pixelpositionen\ eines\ Pictures\r\n\ z.B.\ drehen,\ spiegeln\ usw.\r\n\r\n\ @author\ Thomas\ Schaller\r\n\ @version\ 1.1\ (28.11.2019)\r\n
+comment0.text=\r\n\ Algorithmen\ zur\ \u00C4nderung\ der\ Pixelpositionen\ eines\ Pictures\r\n\ z.B.\ drehen,\ spiegeln\ usw.\r\n\r\n\ @author\ Uli\ G\u00F6ppert\r\n\ @version\ 8.3.21\r\n
 comment1.params=originalbild
 comment1.target=imp.Picture\ spiegelHorizontal(imp.Picture)
 comment1.text=\ spiegeleHorizontal\ spiegelt\ das\ Bild,\ so\ dass\ rechts\ und\ links\ getauscht\ werden\r\n\ @param\ originalbild\ Ein\ Bild\ (Picture),\ das\ gespiegelt\ werden\ soll\r\n\ @return\ Eine\ gespiegelte\ Kopie\ des\ Bildes\r\n
-numComments=2
+comment2.params=originalbild
+comment2.target=imp.Picture\ spiegelVertikal(imp.Picture)
+comment2.text=\ spiegeleVertikal\ spiegelt\ das\ Bild,\ so\ dass\ oben\ und\ unten\ getauscht\ werden\r\n\ @param\ originalbild\ Ein\ Bild\ (Picture),\ das\ gespiegelt\ werden\ soll\r\n\ @return\ Eine\ gespiegelte\ Kopie\ des\ Bildes\r\n
+comment3.params=originalbild
+comment3.target=imp.Picture\ dreheRechts(imp.Picture)
+comment3.text=\ dreheRechts\ dreht\ das\ Bild\ um\ 90\u00B0\ nach\ rechts\r\n\ @param\ originalbild\ Ein\ Bild\ (Picture),\ das\ gedreht\ werden\ soll\r\n\ @return\ Eine\ gedrehte\ Kopie\ des\ Bildes\r\n
+comment4.params=originalbild
+comment4.target=imp.Picture\ dreheLinks(imp.Picture)
+comment4.text=\ dreheLinks\ dreht\ das\ Bild\ um\ 90\u00B0\ nach\ links\r\n\ @param\ originalbild\ Ein\ Bild\ (Picture),\ das\ gedreht\ werden\ soll\r\n\ @return\ Eine\ gedrehte\ Kopie\ des\ Bildes\r\n
+comment5.params=originalbild
+comment5.target=imp.Picture\ drehe180(imp.Picture)
+comment5.text=\ drehe180\ dreht\ das\ Bild\ um\ 180\u00B0\ \r\n\ @param\ originalbild\ Ein\ Bild\ (Picture),\ das\ gedreht\ werden\ soll\r\n\ @return\ Eine\ gedrehte\ Kopie\ des\ Bildes\r\n
+numComments=6

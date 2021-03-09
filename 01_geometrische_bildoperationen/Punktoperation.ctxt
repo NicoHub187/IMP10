@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Punktoperation
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Punktoperation.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment1.params=
+comment1.target=Punktoperation()
+comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Punktoperation\r\n
+comment2.params=y
+comment2.target=int\ beispielMethode(int)
+comment2.text=\r\n\ Ein\ Beispiel\ einer\ Methode\ -\ ersetzen\ Sie\ diesen\ Kommentar\ mit\ Ihrem\ eigenen\r\n\ \r\n\ @param\ \ y\ \ \ \ ein\ Beispielparameter\ f\u00FCr\ eine\ Methode\r\n\ @return\ \ \ \ \ \ \ \ die\ Summe\ aus\ x\ und\ y\r\n
+comment3.params=originalbild
+comment3.target=imp.Picture\ graustufenDurchschnitt(imp.Picture)
+comment4.params=originalbild
+comment4.target=imp.Picture\ graustufenMax(imp.Picture)
+comment5.params=originalbild
+comment5.target=imp.Picture\ graustufenMin(imp.Picture)
+numComments=6

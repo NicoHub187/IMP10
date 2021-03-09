@@ -134,4 +134,31 @@ public class Punktoperation
         return neuesBild;
         
     }
+    private int runden(double value) {
+      return (int) value;
+   }
+    public Picture graustufenNatürlich(Picture originalbild) {
+        int breite = originalbild.getWidth();
+        int hoehe = originalbild.getHeight();
+        Color[][] pixel = originalbild.getPixelArray();
+        Color[][] pixelNeu = new Color[breite][hoehe];
+        
+        double c = 0;
+        int r;
+        
+        Color farbe;
+        for(int x=0; x < breite; x++) {
+            for(int y=0; y < hoehe; y++) {
+              c = pixel[x][y].getBlue()*0.114+pixel[x][y].getRed()*0.299+pixel[x][y].getGreen()*0.587;
+              r = runden(c);
+              farbe = new Color(r,r,r);
+              pixelNeu[x][y] = farbe;
+            }
+        }
+        
+        Picture neuesBild = new Picture();
+        neuesBild.setPixelArray(pixelNeu);
+        return neuesBild;
+        
+    }
 }

@@ -17,7 +17,7 @@ public class GeometrischeBildoperationen
      * @return Eine gespiegelte Kopie des Bildes
      */
 
-    public  Picture spiegelHorizontal(Picture originalbild) {
+    public  Picture dreheLinks(Picture originalbild) {
         int breite = originalbild.getWidth();
         int hoehe  = originalbild.getHeight();
 
@@ -34,8 +34,17 @@ public class GeometrischeBildoperationen
         neuesBild.setPixelArray(pixelNeu); 
         return neuesBild;
     }
-
     
 
+    /** spiegeleHorizontal spiegelt das Bild, so dass rechts und links gedreht werden
+     * @param originalbild Ein Bild (Picture), das gespiegelt werden soll
+     * @return Eine gespiegelte Kopie des Bildes
+     */
+    public Picture dr(Picture originalbild) {
+        Picture bild90 = dreheLinks (originalbild);
+        Picture bild180 = dreheLinks (bild90); 
+        return bild180;
+        
 
+    }
 }

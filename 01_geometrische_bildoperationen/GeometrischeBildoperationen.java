@@ -7,7 +7,8 @@ import java.util.Random;
  * z.B. drehen, spiegeln usw.
  *
  * @author Clemens Schulmeister
- * @version 1.1**/
+ * @version 9.3.
+**/
 public class GeometrischeBildoperationen 
 {
     /** spiegeleHorizontal spiegelt das Bild, so dass rechts und links getauscht werden
@@ -29,7 +30,7 @@ public class GeometrischeBildoperationen
             for(int y=0;y < breite; y++) {
                 pixelNeu[x][y] = pixel[y][(hoehe-1)-x];// noch nicht ganz richtig, da du einmal zuviel von oben nach unten spiegelst.
                                                           //müsste jetzt richtig sein
-														  // ja, hast du auch getestet, oder?
+                                                          // ja, hast du auch getestet, oder?
             }
         }
 
@@ -48,7 +49,7 @@ public  Picture dreheLinks(Picture originalbild) {
             for(int y=0;y < breite; y++) {
                 pixelNeu[x][y] = pixel[(breite-1)-y][x];//auch nicht richtig, kannst du das Ergebnis nicht prüfen?
                                                         //habe ich auch korrigiert
-														// ja !
+                                                        // ja !
             }
         }
 

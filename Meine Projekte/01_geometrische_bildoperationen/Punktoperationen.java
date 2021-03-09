@@ -113,13 +113,12 @@ public class Punktoperationen
 
         Color[][] pixel = originalbild.getPixelArray();
         Color[][] pixelNeu = new Color[breite][hoehe];
-        int c;
+        int c = 0;
         Color farbe;
 
         for(int x=0; x < breite; x++) {
             for(int y=0;y < hoehe; y++) {
-                c = pixel[x][y].getBlue(); 
-                if (c > pixel[x][y].getGreen()){
+                 if (c > pixel[x][y].getGreen()){
                     c = pixel[x][y].getGreen();
                 }
                 if (c > pixel[x][y].getRed()){

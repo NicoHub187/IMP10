@@ -7,6 +7,8 @@ import java.util.Random;
  * 
  * @author Paul
  * 
+ * super !!!!!
+ * 
  */
 public class Punktoperationen
 {

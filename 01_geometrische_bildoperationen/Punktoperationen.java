@@ -89,7 +89,7 @@ public class Punktoperationen
       return (int) value;
    }
    public Picture graustufenNatuerlich(Picture originalbild)
-    { double r;//noch nicht fertig
+    { double r;//noch nicht fertig okay, aber du bist auf dem richtigen Weg...
       double g;
       double b;
         Color farbe;
@@ -102,7 +102,7 @@ public class Punktoperationen
                 r=pixel[x][y].getGreen();
                 b=pixel[x][y].getBlue();
                 g=pixel[x][y].getRed();
-                farbe = new Color(r,g,b);
+                farbe = new Color(r,g,b); // ja, hier ist es eben noch nicht fertig, gell?
                 pixelNew[x][y] = farbe;
             }
         }

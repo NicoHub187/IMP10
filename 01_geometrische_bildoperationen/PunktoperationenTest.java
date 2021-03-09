@@ -6,20 +6,20 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Die Test-Klasse GeometrischeBildoperationenTest.
+ * Die Test-Klasse PunktoperationenTest.
  *
  * @author  (Ihr Name)
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class GeometrischeBildoperationenTest
+public class PunktoperationenTest
 {
     private Beispielbild beispiel1;
-    private GeometrischeBildoperationen geometri1;
+    private Punktoperationen punktope1;
 
     /**
-     * Konstruktor fuer die Test-Klasse GeometrischeBildoperationenTest
+     * Konstruktor fuer die Test-Klasse PunktoperationenTest
      */
-    public GeometrischeBildoperationenTest()
+    public PunktoperationenTest()
     {
     }
 
@@ -32,7 +32,7 @@ public class GeometrischeBildoperationenTest
     public void setUp()
     {
         beispiel1 = new Beispielbild();
-        geometri1 = new GeometrischeBildoperationen();
+        punktope1 = new Punktoperationen();
     }
 
     /**

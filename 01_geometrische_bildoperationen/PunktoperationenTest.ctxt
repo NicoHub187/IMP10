@@ -1,9 +1,9 @@
 #BlueJ class context
-comment0.target=GeometrischeBildoperationenTest
-comment0.text=\r\n\ Die\ Test-Klasse\ GeometrischeBildoperationenTest.\r\n\r\n\ @author\ \ (Ihr\ Name)\r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment0.target=PunktoperationenTest
+comment0.text=\r\n\ Die\ Test-Klasse\ PunktoperationenTest.\r\n\r\n\ @author\ \ (Ihr\ Name)\r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
 comment1.params=
-comment1.target=GeometrischeBildoperationenTest()
-comment1.text=\r\n\ Konstruktor\ fuer\ die\ Test-Klasse\ GeometrischeBildoperationenTest\r\n
+comment1.target=PunktoperationenTest()
+comment1.text=\r\n\ Konstruktor\ fuer\ die\ Test-Klasse\ PunktoperationenTest\r\n
 comment2.params=
 comment2.target=void\ setUp()
 comment2.text=\r\n\ \ Setzt\ das\ Testger\u00FCst\ fuer\ den\ Test.\r\n\r\n\ Wird\ vor\ jeder\ Testfall-Methode\ aufgerufen.\r\n

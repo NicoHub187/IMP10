@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Punktoperationen
-comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Punktoperationen.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Punktoperationen.\r\n\ \r\n\ @author\ Clemens\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
 comment1.params=originalbild
 comment1.target=imp.Picture\ graustufenDurchschnitt(imp.Picture)
 comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Punktoperationen\r\n

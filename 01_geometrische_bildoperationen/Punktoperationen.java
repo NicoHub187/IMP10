@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * Beschreiben Sie hier die Klasse Punktoperationen.
  * 
- * @author (Ihr Name) 
+ * @author Clemens 
  * @version (eine Versionsnummer oder ein Datum)
  */
 public class Punktoperationen
@@ -26,7 +26,7 @@ public class Punktoperationen
          for(int x=0; x < breite; x++) {
             for(int y=0;y < hoehe; y++) {
               color = (pixel[x][y].getRed() + pixel[x][y].getGreen() + pixel[x][y].getBlue())/3;
-              
+              // hier noch pixelNeu mit color belegen
             }
         }
         Picture neuesBild = new Picture();

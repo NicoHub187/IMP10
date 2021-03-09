@@ -4,7 +4,7 @@ import java.util.Random;
 /**
  * Beschreiben Sie hier die Klasse Punktoperation.
  * 
- * @author (Ihr Name) 
+ * @author Felix
  * @version (eine Versionsnummer oder ein Datum)
  */
 public class Punktoperation

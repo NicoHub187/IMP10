@@ -84,6 +84,28 @@ public class Punktoperationen
         neuesBild.setPixelArray(pixelNeu); 
         return neuesBild;
     }
+    public  Picture invert_red (Picture originalbild) {
+        int breite = originalbild.getWidth();
+        int hoehe  = originalbild.getHeight();
+
+        Color[][] pixel = originalbild.getPixelArray();
+        Color[][] pixelNeu = new Color[breite][hoehe];
+        int c;
+        Color farbe;
+
+        for(int x=0; x < breite; x++) {
+            for(int y=0;y < hoehe; y++) {
+                c = 255 - pixel[x][y].getRed(); 
+                
+                farbe = new Color(c,pixel[x][y].getGreen(),pixel[x][y].getBlue());
+                pixelNeu[x][y] = farbe;
+            }
+        }
+
+        Picture neuesBild = new Picture();
+        neuesBild.setPixelArray(pixelNeu); 
+        return neuesBild;
+    }
     
     public  Picture Schwarz_weiß_min (Picture originalbild) {
         int breite = originalbild.getWidth();

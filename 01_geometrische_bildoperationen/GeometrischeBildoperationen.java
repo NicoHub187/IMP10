@@ -6,9 +6,9 @@ import java.util.Random;
  * Algorithmen zur Änderung der Pixelpositionen eines Pictures
  * z.B. drehen, spiegeln usw.
  *
- * @author Thomas Schaller
+ *  
  * @author Timon Röck
- * @version 1.1 (2.3.2021)
+ * @version 9.3.21
  */
 public class GeometrischeBildoperationen 
 {

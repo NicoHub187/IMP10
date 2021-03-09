@@ -134,6 +134,6 @@ public class Punktoperationen
     }
     private int runden(double value) {
       return (int) value;
-   }
+    }
     
 }

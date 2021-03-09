@@ -62,7 +62,26 @@ public class GeometrischeBildoperationen
         Picture bild90 = dreheLinks(originalbild);
         Picture bild180 = dreheLinks(bild90);
         return bild180;
+    }
+    
+    public  Picture dreheRechts(Picture originalbild) {
+        int breite = originalbild.getWidth();
+        int hoehe  = originalbild.getHeight();
+
+        Color[][] pixel = originalbild.getPixelArray();
+        Color[][] pixelNeu = new Color[hoehe][breite];
+
+        for(int x=0; x < hoehe; x++) {
+            for(int y=0;y < breite; y++) {
+                pixelNeu[x][y] = pixel[y][(hoehe-1)-x];
+            }
+        }
+
+        Picture neuesBild = new Picture();
+        neuesBild.setPixelArray(pixelNeu); 
+        return neuesBild;
     } 
+    
 
     
 

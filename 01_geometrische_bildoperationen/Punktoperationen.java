@@ -35,16 +35,53 @@ public class Punktoperationen
         neuesBild.setPixelArray(pixelNeu); 
         return neuesBild;
     }
+    public Picture graustufenMin (Picture originalbild){
+        int breite = originalbild.getWidth();
+        int hoehe  = originalbild.getHeight();
 
-    /**
-     * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
-     * 
-     * @param  y    ein Beispielparameter für eine Methode
-     * @return        die Summe aus x und y
-     */
-    public int beispielMethode(int y)
-    {
-        // tragen Sie hier den Code ein
-        return x + y;
+        Color[][] pixel = originalbild.getPixelArray();
+        Color[][] pixelNeu = new Color[breite][hoehe];
+        int color;
+        Color farbe;
+        for(int x=0; x < breite; x++) {
+            for(int y=0;y < hoehe; y++) {
+              color = pixel [x][y].getBlue();
+              if (color < pixel [x][y].getRed()){
+                 color = pixel[x][y].getRed(); 
+              }
+              if (color < pixel [x][y].getGreen()){
+                 color = pixel[x][y].getGreen(); 
+              }
+              if (color < pixel [x][y].getBlue()){
+                 color = pixel[x][y].getBlue(); 
+              }
+              farbe = new Color (color,color,color);
+              pixelNeu[x][y] = farbe;
+            }
+        }
+        Picture neuesBild = new Picture();
+        neuesBild.setPixelArray(pixelNeu); 
+        return neuesBild;
+        //ist nur ein minimaler Unterschied zum Original
+    }
+    public Picture graustufenMax (Picture originalbild){
+        int breite = originalbild.getWidth();
+        int hoehe  = originalbild.getHeight();
+
+        Color[][] pixel = originalbild.getPixelArray();
+        Color[][] pixelNeu = new Color[breite][hoehe];
+        int color;
+        Color farbe;
+        for(int x=0; x < breite; x++) {
+            for(int y=0;y < hoehe; y++) {
+              color = pixel [x][y].getBlue();
+              //noch nicht fertig :)
+              farbe = new Color (color,color,color);
+              pixelNeu[x][y] = farbe;
+            }
+        }
+        Picture neuesBild = new Picture();
+        neuesBild.setPixelArray(pixelNeu); 
+        return neuesBild;
     }
 }

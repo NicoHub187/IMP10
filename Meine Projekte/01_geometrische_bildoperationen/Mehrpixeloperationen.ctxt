@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Mehrpixeloperationen
+comment0.text=\r\n\ \r\n\ \r\n\ @author\ Paul\r\n\ \r\n\ super\ \!\!\!\!\!\r\n\ \r\n
+comment1.params=originalbild
+comment1.target=imp.Picture\ faltung(imp.Picture)
+numComments=2

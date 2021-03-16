@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * Algorithmen zur Änderung der Pixelpositionen eines Pictures
  *Skurrrrrrrrrrrrrrrrrr
- *Paul Kornmann (dass ich weiß, dass ich richtig bin...
+ *Paul Kornmann 
  */
 public class GeometrischeBildoperationen 
 {
@@ -66,7 +66,4 @@ public class GeometrischeBildoperationen
         neuesBild.setPixelArray(pixelNeu); 
         return neuesBild;
     }
-    
-
-
 }

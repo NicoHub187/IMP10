@@ -25,5 +25,7 @@ public class Beispielbild extends Picture
     public void save(String dateiname) {
         super.save("images/"+dateiname);
     }
+    
+    
 
 }

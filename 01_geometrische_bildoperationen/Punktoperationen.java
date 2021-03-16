@@ -104,11 +104,9 @@ public class Punktoperationen
                 r=pixel[x][y].getGreen()*0.299;
                 b=pixel[x][y].getBlue()*0.587;
                 g=pixel[x][y].getRed()*0.114;
-               
-                runden(r);
-                runden(g);
-                runden(b);
-                //a = ;
+                a= runden(r+b+g);
+                
+                
                 
                 farbe = new Color(a,a,a); // ja, hier ist es eben noch nicht fertig, gell?
                 pixelNew[x][y] = farbe;

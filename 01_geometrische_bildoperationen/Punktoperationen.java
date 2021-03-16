@@ -1,4 +1,6 @@
-
+import imp.*;
+import java.awt.Color;
+import java.util.Random;
 /**
  * Beschreiben Sie hier die Klasse Punktoperationen.
  * 
@@ -28,12 +30,23 @@ public class Punktoperationen
     public int beispielMethode(int y)
     {
         // tragen Sie hier den Code ein
-        return x + y;
+        return 100 + 50;
     }
     
-    public Picture graustufenDurchschnitt(Picture originalbild)
-    {
-        // 
-        return x + y;
+     public Picture graustufenDurchschnitt (Picture originalbild, double faktor_r,
+        double faktor_g, double faktor_b){
+    
+         {
+          Color farbe;
+          farbe = new Color(0,255,255);
+          farbe = Color.GREEN;
+          
+        
+         
+    
+
+    
+        }
     }
-}
+} 
+

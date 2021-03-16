@@ -17,7 +17,7 @@ public class Mehrpixeloperationen
      */
     public  Picture faltung(Picture originalbild//,double filter 
     )
-    {   int filter [][] = new int [3][3];
+    {   int filter [][] = new int [3][3]; //das ist der Filter
         filter [0][0] = -1;
         filter [1][0] = -2;
         filter [2][0] = -1;

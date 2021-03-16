@@ -23,10 +23,12 @@ public class Punktoperationen
         Color[][] pixel = originalbild.getPixelArray();
         Color[][] pixelNeu = new Color[breite][hoehe];
         int color;
+        Color farbe;
          for(int x=0; x < breite; x++) {
             for(int y=0;y < hoehe; y++) {
               color = (pixel[x][y].getRed() + pixel[x][y].getGreen() + pixel[x][y].getBlue())/3;
-              // hier noch pixelNeu mit color belegen
+              farbe = new Color (color,color,color);
+              pixelNeu[x][y] = farbe;
             }
         }
         Picture neuesBild = new Picture();

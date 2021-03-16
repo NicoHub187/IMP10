@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Mehrpixeloperationen
 comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Mehrpixeloperationen.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
-comment1.params=originalbild\ filter
-comment1.target=imp.Picture\ faltung(imp.Picture,\ double[][])
+comment1.params=originalbild
+comment1.target=imp.Picture\ faltung(imp.Picture)
 comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Mehrpixeloperationen\r\n
 numComments=2

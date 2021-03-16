@@ -15,8 +15,20 @@ public class Mehrpixeloperationen
     /**
      * Konstruktor für Objekte der Klasse Mehrpixeloperationen
      */
-    public  Picture faltung(Picture originalbild, double[][]filter)
-    {   Color[][] pixel = originalbild.getPixelArray();
+    public  Picture faltung(Picture originalbild//,double filter 
+    )
+    {   int filter [][] = new int [3][3];
+        filter [0][0] = -1;
+        filter [1][0] = -2;
+        filter [2][0] = -1;
+        filter [0][1] = 0;
+        filter [1][1] = 0;
+        filter [2][1] = 0;
+        filter [0][2] = 1;
+        filter [1][2] = 2;
+        filter [2][2] = 1;
+
+        Color[][] pixel = originalbild.getPixelArray();
         Color[][] pixelNeu = originalbild.getPixelArray();
         int laenge = filter.length;
         int halb = laenge / 2;

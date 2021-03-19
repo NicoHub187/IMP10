@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Mehrpixeloperationen
+comment0.text=\r\n\ \r\n\ \r\n\ @author\ Paul\r\n\ \r\n\ super\ \!\!\!\!\!\r\n\ \r\n
+comment1.params=originalbild
+comment1.target=imp.Picture\ ____(imp.Picture)
+comment2.params=originalbild
+comment2.target=imp.Picture\ weich(imp.Picture)
+comment3.params=originalbild\ filter
+comment3.target=imp.Picture\ faltung(imp.Picture,\ double[][])
+comment4.params=value
+comment4.target=int\ runden(double)
+numComments=5

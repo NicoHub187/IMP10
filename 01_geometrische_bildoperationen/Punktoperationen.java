@@ -92,7 +92,7 @@ public class Punktoperationen
         neuesBild.setPixelArray(pixelNeu); 
         return neuesBild;
     }
-    public Picture graustufenNatuerlich (Picture originalbild){
+    public Picture Rotinvertieren(Picture originalbild){
         int breite = originalbild.getWidth();
         int hoehe  = originalbild.getHeight();
 
@@ -102,9 +102,10 @@ public class Punktoperationen
         Color farbe;
         for(int x=0; x < breite; x++) {
           for(int y=0;y < hoehe; y++) {
-            color = pixel[x][y].getRed()*0.299 + pixel[x][y].getGreen()*0.587 + pixel[x][y].getBlue()*0.114; 
-            farbe = new Color (color,color,color);
-            pixelNeu[x][y] = farbe;  
+            color=255 - pixel[x][y].getRed();
+            
+            farbe = new Color(color, pixel[x][y].getGreen(),pixel[x][y].getBlue());
+            pixelNeu[x][y] = farbe;
           }
         }
         Picture neuesBild = new Picture();

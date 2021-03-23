@@ -11,29 +11,53 @@ import java.util.Random;
  * 
  */
 public class Mehrpixeloperationen{
-    public Picture ____(Picture originalbild) {
-        double filter [][] = new double [3][3];
-        double x = 1.0 / 9.0 ;
-        filter [0][0] = x;
-        filter [1][0] = x;
-        filter [2][0] = x;
-        filter [0][1] = x;
-        filter [1][1] = x;
-        filter [2][1] = x;
-        filter [0][2] = x;
-        filter [1][2] = x;
-        filter [2][2] = x;
-        double y = 1.0 / 4.0 ;
-        java.lang.System.out.println(filter [2][2]);
-        java.lang.System.out.println(x);
+    public Picture ____ (Picture originalbild, int filter_groesse) {
+        double l = 0;     
+        
+        double filter [][] = new double [filter_groesse][filter_groesse];
+        
+            for (int i = 0;i < filter_groesse; i++ ){
+                for (int n = 0;n < filter_groesse; n++ ){
+                    double x = -1 * (Math.sqrt(i)*Math.sqrt(n)) /  2 * Math.sqrt((filter_groesse / 6));
+                    
+                    filter [i][n] = Math.exp(x);
+                    l = filter [i][n];
+                    }  
+            }
+            for (int i = 0;i < filter_groesse; i++ ){
+                for (int n = 0;n < filter_groesse; n++ ){
+                    filter [i][n] = (l * -1) * filter [i][n];
+                    
+                   }  
+            }
+            
+        
         
         return faltung(originalbild,(double[][]) filter);
     
-      }
-    public Picture weich(Picture originalbild) {
-        int filter_groesse = 3;
+    
+     }
+    public Picture relief(Picture originalbild) {
         double filter [][] = new double [3][3];
-        double filter_content = 1.0 / 9.0 ;
+        
+        filter [0][0] = -1;
+        filter [1][0] = 1;
+        filter [2][0] = -1;
+        filter [0][1] = 1;
+        filter [1][1] = 1;
+        filter [2][1] = 1;
+        filter [0][2] = -1;
+        filter [1][2] = 1;
+        filter [2][2] = -1;
+        
+        
+        
+        return faltung(originalbild,(double[][]) filter);
+    
+     }
+    public Picture weich(Picture originalbild,int filter_groesse) {
+        double filter [][] = new double [filter_groesse][filter_groesse];
+        double filter_content = 1.0 /  (double)(filter_groesse * filter_groesse) ;
             for (int i = 0;i < filter_groesse; i++ ){
                 for (int n = 0;n < filter_groesse; n++ ){
                     filter [i][n] = filter_content;
@@ -44,7 +68,7 @@ public class Mehrpixeloperationen{
         
         return faltung(originalbild,(double[][]) filter);
     
-      }
+     }
   
      
     public Picture faltung(Picture originalbild,double[][] filter) {
@@ -57,7 +81,6 @@ public class Mehrpixeloperationen{
          double gruen = 0.0;
          double blau = 0.0;
          int laenge = filter.length;
-         java.lang.System.out.println(laenge);
          int halb = laenge / 2;
     
           for (int x = halb; x < originalbild.getWidth() - halb; x++){

@@ -33,20 +33,14 @@ public class Punktoperationen
         return 100 + 50;
     }
     
-     public Picture graustufenDurchschnitt (Picture originalbild, double faktor_r,
-        double faktor_g, double faktor_b){
-    
-         {
-          Color farbe;
-          farbe = new Color(0,255,255);
-          farbe = Color.GREEN;
-          
+    public Picture Schawarz_weiß_convert (Picture originalbild){
+        int breite = originalbild
         
          
     
 
     
-        }
+    }
     }
 } 
 

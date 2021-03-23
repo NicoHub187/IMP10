@@ -36,15 +36,20 @@ public class GeometrischeBildoperationen
     }
     
 
-    /** spiegeleHorizontal spiegelt das Bild, so dass rechts und links gedreht werden
-     * @param originalbild Ein Bild (Picture), das gespiegelt werden soll
-     * @return Eine gespiegelte Kopie des Bildes
-     */
-    public Picture dr(Picture originalbild) {
-        Picture bild90 = dreheLinks (originalbild);
-        Picture bild180 = dreheLinks (bild90); 
-        return bild180;
-        
-
-    }
+    public Picture graustufenDurchschnitt (Picture originalbild) {
+       int breite = originalbild.getWidth(); 
+        int hoehe  = originalbild.getHeight();
+    
+    Color[][] pixel = originalbild.getPixelArray();
+    Color[][] pixelNeu = new Color[breite][hoehe];
+    
+     for(int x=0; x < breite; x++) {
+        for(int y=0;y < hoehe; y++) {
+            //Durchschnitt bestimmen
+            int grau =(int) ((pixel[x][y].getRed()+ pixel[x][y].getGreen()+ pixel[x][y].getBlue())/3);
+            pixelNeu[x][y]= new Color(grau, grau, grau); // Mittelwert für alle einsetzen, ergibt Grauton
+    
+}
+}
+}
 }

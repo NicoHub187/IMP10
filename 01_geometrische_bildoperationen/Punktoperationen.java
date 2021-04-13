@@ -32,7 +32,7 @@ public class Punktoperationen
     {
         // tragen Sie hier den Code ein
         return 100 + 50;
-  }
+    }
     
     
     

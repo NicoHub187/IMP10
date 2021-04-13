@@ -1,12 +1,11 @@
 #BlueJ class context
 comment0.target=Mehrpixeloperationen
-comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Mehrpixeloperationen.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
 comment1.params=originalbild
 comment1.target=imp.Picture\ relief(imp.Picture)
 comment2.params=originalbild
 comment2.target=imp.Picture\ ____(imp.Picture)
-comment3.params=originalbild
-comment3.target=imp.Picture\ weich(imp.Picture)
+comment3.params=originalbild\ filtergroesse
+comment3.target=imp.Picture\ weich(imp.Picture,\ int)
 comment4.params=originalbild\ filter
 comment4.target=imp.Picture\ faltung(imp.Picture,\ double[][])
 numComments=5

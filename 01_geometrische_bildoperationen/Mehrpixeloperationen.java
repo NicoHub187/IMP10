@@ -2,12 +2,7 @@
 import imp.*;
 import java.awt.Color;
 
-/**
- * Beschreiben Sie hier die Klasse Mehrpixeloperationen.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
+
 public class Mehrpixeloperationen
 {   public Picture relief(Picture originalbild) {
         double filter [][] = new double [3][3];
@@ -42,17 +37,20 @@ public class Mehrpixeloperationen
         return faltung(originalbild,(double[][])filter);
     }
 
-    public Picture weich(Picture originalbild){
-        int filtergroesse =3;
-        double filter [][] =new double [3][3];
-        double filtercontent = 1.0/9.0;
-        for(int i = 0; i<filtergroesse; i++){
-            for(int j=0; j<filtergroesse; j++){
-                filter[i][j] = filtercontent;
+    public Picture weich(Picture originalbild,int filtergroesse) {
+        double filter [][] = new double [filtergroesse][filtergroesse];
+        double filtercontent = 1.0 /  (double)(filtergroesse * filtergroesse) ;
+            for (int i = 0;i < filtergroesse; i++ ){
+                for (int j = 0;j < filtergroesse; j++ ){
+                    filter [i][j] = filtercontent;
+
+                }
             }
-        }
-        return faltung(originalbild, (double[][])filter);
-    }
+
+
+        return faltung(originalbild,(double[][]) filter);
+
+     }
     public Picture faltung(Picture originalbild,double[][] filter) {
 
 
@@ -105,11 +103,6 @@ public class Mehrpixeloperationen
    }
     
 
-    /**
-     * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
-     * 
-     * @param  y    ein Beispielparameter für eine Methode
-     * @return        die Summe aus x und y
-     */
+    
 
 }

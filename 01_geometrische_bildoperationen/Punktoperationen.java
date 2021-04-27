@@ -1,7 +1,7 @@
+
 import imp.*;
 import java.awt.Color;
 import java.util.Random;
-
 /**
  * Beschreiben Sie hier die Klasse Punktoperationen.
  * 
@@ -20,7 +20,7 @@ public class Punktoperationen
     {
         // Instanzvariable initialisieren
         x = 0;
-    }
+  }
 
     /**
      * Ein Beispiel einer Methode - ersetzen Sie diesen Kommentar mit Ihrem eigenen
@@ -31,6 +31,56 @@ public class Punktoperationen
     public int beispielMethode(int y)
     {
         // tragen Sie hier den Code ein
-        return x + y;
+        return 100 + 50;
     }
+    
+    
+    
+        public Picture graustufenDurchschnitt(Picture originalbild){
+        int breite = originalbild.getWidth();
+        int hoehe = originalbild.getHeight();
+        
+        Color[][] pixel = originalbild.getPixelArray();
+        Color[][] pixelNeu = new Color[breite][hoehe];
+        int c;
+        
+        for(int x=0; x < breite; x++) {
+            for(int y=0;y < hoehe; y++) {
+                c = (int) (pixel[x][y].getRed()+ pixel[x][y].getGreen()+ pixel[x][y].getBlue())/ 3;
+                pixelNeu[x][y] = new Color(c,c,c);
+            }
+        }
+         Picture neuesBild = new Picture();
+        neuesBild.setPixelArray(pixelNeu); 
+        return neuesBild;  
+        
+        
+  }
+    
+     public Picture graustufenMin(Picture originalbild){
+        int breite = originalbild.getWidth();
+        int hoehe = originalbild.getHeight();
+        
+        Color[][] pixel = originalbild.getPixelArray();
+        Color[][] pixelNeu = new Color[breite][hoehe];
+        int c;
+        
+        for(int x=0; x < breite; x++) {
+           for(int y=0;y < hoehe; y++) {
+                c = pixel [x][y].getRed();
+                if (c > pixel[x][y].getGreen()) c = pixel [x][y].getGreen();
+                if (c > pixel[x][y].getBlue()) c = pixel [x][y].getBlue();
+                pixelNeu[x][y] = new Color(c,c,c);
+        }
+    }
+         Picture neuesBild = new Picture();
+        neuesBild.setPixelArray(pixelNeu); 
+        return neuesBild;  
+        
+        
+  }
+  
+  
+  
+  
 }
